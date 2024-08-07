@@ -1,19 +1,25 @@
 <header>
   <div id="nav">
-          <ul>
-              <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-              <li><a routerLink="/category" routerLinkActive="active">Categories</a></li>
-              <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-              <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-              <div id="search">
-                  <form>
-                      <input type="text" placeholder="Search">
-                      <button class="primary" type="button">Search</button>
-                  </form>
-              </div>
-          </ul>
-          
-      </div>
-  </header>
+        <ul>
+            <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li>
+            <a routerLink="/category" routerLinkActive="active">Categories</a>
+                <ul class="dropdown">
+                    <li><a routerLink="#" routerLinkActive="active">placeholder 1</a></li>
+                    <li><a routerLink="#" routerLinkActive="active">placeholder 2</a></li>
+                    <li><a routerLink="#" routerLinkActive="active">placeholder 3</a></li>
+                </ul>
+            </li>
+            <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+            <li id="search">
+                <form>
+                    <input class="search" type="text" placeholder="Search">
+                    <button class="primary" type="button">Search</button>
+                </form>
+            </li>
+        </ul> 
+    </div>
+</header>
   
 <router-outlet></router-outlet>
