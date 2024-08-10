@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { CatsComponent } from './products/cats/cats.component';
 import { FoodComponent } from './products/food/food.component';
+import { AccessoriesComponent } from './products/accessories/accessories.component';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,9 @@ export const routes: Routes = [
     {
         path: 'food', 
         component: FoodComponent
+    },
+    {
+        path: 'accessories', 
+        component: AccessoriesComponent
     }
 ];
