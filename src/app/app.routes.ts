@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component';
 import { CatsComponent } from './products/cats/cats.component';
 import { FoodComponent } from './products/food/food.component';
 import { AccessoriesComponent } from './products/accessories/accessories.component';
+import { CatToysComponent } from './products/cat-toys/cat-toys.component';
 
 export const routes: Routes = [
     {
@@ -35,5 +36,9 @@ export const routes: Routes = [
     {
         path: 'accessories', 
         component: AccessoriesComponent
-    }
+    },
+    {
+        path: 'cat-toys', 
+        component: CatToysComponent
+    },
 ];
