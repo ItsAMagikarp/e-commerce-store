@@ -16,14 +16,14 @@
             <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
             <li id="search">
                 <form>
-                    <input class="search" type ="text" placeholder="Search.."/>
-                    <! -- name="search" {(ngModel)}="searchQuery" -->
+                    <input class="search" type ="text" placeholder="Search.." name="search" [(ngModel)]="searchQuery"/>
+                    <! --  -->
                     <button class="primary" type="submit">Search</button>
                 </form>
             </li>
         </ul> 
     </div>
-    <h1>{{ searchQuery }}</h1>
+    <div class="search-results"><p>{{ searchQuery }}</p></div>
 </header>
   
 <router-outlet></router-outlet>

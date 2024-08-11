@@ -85,3 +85,8 @@ ul li:hover ul.dropdown{
     padding: 5px 10px;
     margin: 10px;
 }
+
+.search-results {
+    margin-left: auto;
+    margin-left: 85.5%;
+}
