@@ -17,7 +17,6 @@
             <li id="search">
                 <form>
                     <input class="search" type ="text" placeholder="Search.." name="search" [(ngModel)]="searchQuery"/>
-                    <! --  -->
                     <button class="primary" type="submit">Search</button>
                 </form>
             </li>
@@ -25,5 +24,9 @@
     </div>
     <div class="search-results"><p>{{ searchQuery }}</p></div>
 </header>
-  
+<!-- use angular materials to create header
+    create dropdown for categories 
+    categories should be populated from app.component.ts file
+    One-click of that category, you will be routed to category/:categoryId and land on that specific category page
+    -->
 <router-outlet></router-outlet>

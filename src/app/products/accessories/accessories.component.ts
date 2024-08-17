@@ -10,3 +10,4 @@ import { Component } from '@angular/core';
 export class AccessoriesComponent {
 
 }
+// grab path parameter category/:categoryId/productDetails/:productId to make API call (Hardcoded Data)

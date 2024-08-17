@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -15,3 +15,6 @@ export class AppComponent {
   title = 'e-commerce-store';
   searchQuery: string ='';
 }
+
+// add api call (hardcoded categories list) 
+
