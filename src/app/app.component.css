@@ -41,16 +41,19 @@ header {
     z-index: 999;
 }
 
-ul li ul.dropdown li{
-    display: block;
+ul li ul.dropdown {
+    display: none;
+    flex-direction: column; /* This makes the flex items (li elements) stack vertically */
+    padding: 0; /* Remove padding to avoid any extra spacing */
+    margin: 0;  /* Remove margin to avoid any extra spacing */
+    list-style: none; /* Remove bullet points */
+    width: 100%;
+    z-index: 999;
+    position: absolute;
 }
 
-ul li ul.dropdown {
-    width: 100%;
-    position: absolute;
-    z-index: 999;
-    display: none;
-    backdrop-filter: blur(10px);
+ul li ul.dropdown li{
+    display: block;
 }
 
 ul li a:hover {
