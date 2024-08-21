@@ -105,43 +105,43 @@ export class ProductService {
       {
         productName: "Cat Toy Placeholder",
         //productImg: ,
-        productCategory: "accessory",
+        productCategory: "cat toy",
         productId: 13,
-        productDesc: "Short Description of Cat accessory",
+        productDesc: "Short Description of Cat Toy",
         price: 14.99
       },
       {
         productName: "Cat Toy Placeholder",
         //productImg: ,
-        productCategory: "accessory",
+        productCategory: "cat toy",
         productId: 14,
-        productDesc: "Short Description of Cat accessory",
+        productDesc: "Short Description of Cat Toy",
         price: 14.99
       },
       {
         productName: "Cat Toy Placeholder",
         //productImg: ,
-        productCategory: "accessory",
+        productCategory: "cat toy",
         productId: 15,
-        productDesc: "Short Description of Cat accessory",
+        productDesc: "Short Description of Cat Toy",
         price: 14.99
       },
       {
         productName: "Cat Toy Placeholder",
         //productImg: ,
-        productCategory: "accessory",
+        productCategory: "cat toy",
         productId: 16,
-        productDesc: "Short Description of Cat accessory",
+        productDesc: "Short Description of Cat Toy",
         price: 14.99
       }
     ]
-    getProductById(id: number): Observable<any> {
+    getProductById(id: number) {
       const productDetails = this.productList.find(p => p.productId === id);
-      return of(productDetails);
+      return productDetails;
     }
   
-    getProductsByCategory(category: string): Observable<any[]> {
+    getProductsByCategory(category: string){
       const products = this.productList.filter(p => p.productCategory === category);
-      return of(products);
+      return products;
   }
 }
