@@ -7,6 +7,7 @@ import { CatsComponent } from './products/cats/cats.component';
 import { FoodComponent } from './products/food/food.component';
 import { AccessoriesComponent } from './products/accessories/accessories.component';
 import { CatToysComponent } from './products/cat-toys/cat-toys.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
 
 export const routes: Routes = [
     {
@@ -17,10 +18,10 @@ export const routes: Routes = [
         path: 'products' , 
         component: ProductsComponent
     },
-    /* {
-        path: 'products/:categoryId' , 
-        component: ProductsComponent
-    }, */
+    // {
+    //     path: 'products/:categoryName' , 
+    //     component: ProductsComponent
+    // }, 
     {
         path: 'about', 
         component: AboutComponent
@@ -30,8 +31,8 @@ export const routes: Routes = [
         component: ContactComponent
     },
     {
-        path: 'products/:categoryId/product-details/:productId' , 
-        component: ProductsComponent
+        path: 'products/:categoryName/product-details/:productId' , 
+        component: ProductDetailsComponent
     },
     {
         path: 'cats', 

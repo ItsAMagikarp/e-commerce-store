@@ -1,9 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
-import { Observable } from 'rxjs';
 import { ProductService } from '../service/product.service';
-import { CatsComponent } from './cats/cats.component';
 
 @Component({
   selector: 'app-products',
@@ -24,6 +22,7 @@ export class ProductsComponent implements OnInit{
   }
 
   public navigateToProduct(product: any) {
-    this.router.navigate([ this.categoryName.toLowerCase(), product.productId]);
+    this.router.navigate(["products", this.categoryName.toLowerCase(), "product-details", product.productId]);
   }
+
 };

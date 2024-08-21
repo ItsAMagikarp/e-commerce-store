@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { CatsComponent } from './products/cats/cats.component';
+
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit{
   title = 'e-commerce-store';
   searchQuery: string ='';
   categoryList: any
-  constructor(){
+  constructor(private router: Router){
   }
   
   ngOnInit() {
@@ -38,6 +38,9 @@ export class AppComponent implements OnInit{
         categoryId: 4,
       },
     ]
+  }
+  public navigateToCategory(category: string){
+    this.router.navigate(["products", category.toLowerCase()])
   }
 }
 

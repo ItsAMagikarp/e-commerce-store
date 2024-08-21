@@ -3,7 +3,7 @@
 </div>
 
 <main class="product-grid">
-    <div *ngFor="let p of productList">
+    <div *ngFor="let p of productList" (click)="navigateToProduct(p)">
         <div class="product-card">
             <h2>{{p.productName}}</h2>
             <p>${{p.price}}</p>

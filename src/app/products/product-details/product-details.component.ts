@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule} from '@angular/router';
-import { Observable, of } from 'rxjs';
 import { ProductService } from '../../service/product.service';
 import { CommonModule } from '@angular/common';
 
@@ -21,7 +20,7 @@ export interface Product {
 })
 
 export class ProductDetailsComponent implements OnInit{
-  productDetails!: Product;
+  productDetails!: any;
 
   constructor(
     private route: ActivatedRoute,
@@ -31,14 +30,16 @@ export class ProductDetailsComponent implements OnInit{
 
   ngOnInit() {
     const productId = Number(this.route.snapshot.paramMap.get('productId'));
+    console.log(productId)
     const product = this.productSerivce.productList.find(p => p.productId === productId);
+    console.log(product)
+    this.productDetails = product;
     if (product) {
       this.productDetails = product;
     } else {
       console.error('Product not found');
       this.router.navigate(['/not-found']);
     }
-    return this.productDetails;
   }
 }
 

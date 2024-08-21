@@ -10,11 +10,7 @@
                     <li *ngFor="let c of categoryList">
                         <a routerLink="/{{c.categoryName}}" routerLinkActive="active">{{c.categoryName}}</a>
                     </li>
-
-                    <!-- <li><a routerLink="/cats" routerLinkActive="active">Cats</a></li>
-                    <li><a routerLink="/food" routerLinkActive="active">Food and Treats</a></li>
-                    <li><a routerLink="/accessories" routerLinkActive="active">Accessories</a></li>
-                    <li><a routerLink="/cat-toys" routerLinkActive="active">Cat Toys</a></li> -->
+                    <!-- <a (click)="navigateToCategory(c.categoryName)">{{c.categoryName}}</a> -->
                 </ul>
             </li>
             <li><a routerLink="/about" routerLinkActive="active">About</a></li>
