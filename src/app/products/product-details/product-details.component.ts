@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, RouterModule} from '@angular/router';
+import { ActivatedRoute, RouterModule} from '@angular/router';
 import { ProductService } from '../../service/product.service';
 import { CommonModule } from '@angular/common';
 
@@ -24,21 +24,17 @@ export class ProductDetailsComponent implements OnInit{
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
     private productSerivce: ProductService
   ) {}
 
   ngOnInit() {
     const productId = Number(this.route.snapshot.paramMap.get('productId'));
-    console.log(productId)
     const product = this.productSerivce.productList.find(p => p.productId === productId);
-    console.log(product)
     this.productDetails = product;
     if (product) {
       this.productDetails = product;
     } else {
       console.error('Product not found');
-      this.router.navigate(['/not-found']);
     }
   }
 }

@@ -8,6 +8,7 @@ import { FoodComponent } from './products/food/food.component';
 import { AccessoriesComponent } from './products/accessories/accessories.component';
 import { CatToysComponent } from './products/cat-toys/cat-toys.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 export const routes: Routes = [
     {
@@ -18,10 +19,10 @@ export const routes: Routes = [
         path: 'products' , 
         component: ProductsComponent
     },
-    // {
-    //     path: 'products/:categoryName' , 
-    //     component: ProductsComponent
-    // }, 
+    {
+         path: 'products/:categoryName' , 
+        component: CategoriesComponent
+    },
     {
         path: 'about', 
         component: AboutComponent
@@ -34,7 +35,7 @@ export const routes: Routes = [
         path: 'products/:categoryName/product-details/:productId' , 
         component: ProductDetailsComponent
     },
-    {
+    /* {
         path: 'cats', 
         component: CatsComponent
     },
@@ -49,5 +50,5 @@ export const routes: Routes = [
     {
         path: 'cat toys', 
         component: CatToysComponent
-    },
+    }, */
 ];

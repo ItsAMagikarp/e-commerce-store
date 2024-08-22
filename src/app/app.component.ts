@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { CategoriesService } from './service/categories.service';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -15,32 +16,15 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent implements OnInit{
   title = 'e-commerce-store';
   searchQuery: string ='';
-  categoryList: any
-  constructor(private router: Router){
-  }
+  categoryList!: any;
+
+  constructor(private CategoriesService: CategoriesService, private router: Router){}
   
   ngOnInit() {
-    this.categoryList =[
-      {
-        categoryName: "cats",
-        categoryId: 1,
-      },
-      {
-        categoryName: "food",
-        categoryId: 2,
-      },
-      {
-        categoryName: "accessory",
-        categoryId: 3,
-      },
-      {
-        categoryName: "cat toys",
-        categoryId: 4,
-      },
-    ]
+    this.categoryList = this.CategoriesService.getCategories();
   }
-  public navigateToCategory(category: string){
-    this.router.navigate(["products", category.toLowerCase()])
+
+  public navigateToCategory(category: any) {
+    this.router.navigate(["products", category.toLowerCase()]);
   }
 }
-
