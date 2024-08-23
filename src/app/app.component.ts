@@ -1,5 +1,5 @@
 import { CategoriesService } from './service/categories.service';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -25,6 +25,7 @@ export class AppComponent implements OnInit{
   }
 
   public navigateToCategory(category: any) {
+    this.router.navigate(["products"]);
     this.router.navigate(["products", category.toLowerCase()]);
   }
 }

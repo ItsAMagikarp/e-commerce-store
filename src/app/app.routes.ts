@@ -35,20 +35,4 @@ export const routes: Routes = [
         path: 'products/:categoryName/product-details/:productId' , 
         component: ProductDetailsComponent
     },
-    /* {
-        path: 'cats', 
-        component: CatsComponent
-    },
-    {
-        path: 'food', 
-        component: FoodComponent
-    },
-    {
-        path: 'accessory', 
-        component: AccessoriesComponent
-    },
-    {
-        path: 'cat toys', 
-        component: CatToysComponent
-    }, */
 ];

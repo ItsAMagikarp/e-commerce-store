@@ -8,8 +8,7 @@
             <a routerLink="/products" routerLinkActive="active">Products ▼</a>
                 <ul class="dropdown">
                     <li *ngFor="let c of categoryList">
-                       <!--  <a routerLink="/{{c.categoryName}}" routerLinkActive="active">{{c.categoryName}}</a> -->
-                        <a (click)="navigateToCategory(c.categoryName)">{{c.categoryName}}</a>
+                        <a (click)="navigateToCategory(c.categoryName)" routerLinkActive="active">{{c.categoryName}}</a>
                     </li>
                 </ul>
             </li>
