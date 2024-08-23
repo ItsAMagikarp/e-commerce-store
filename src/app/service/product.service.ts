@@ -102,35 +102,35 @@ export class ProductService {
         price: 14.99
       },
       {
-        productName: "Cat Toy Placeholder",
+        productName: "cat toys Placeholder",
         //productImg: ,
-        productCategory: "cat toy",
+        productCategory: "cat toys",
         productId: 13,
-        productDesc: "Short Description of Cat Toy",
+        productDesc: "Short Description of cat toys",
         price: 14.99
       },
       {
-        productName: "Cat Toy Placeholder",
+        productName: "cat toys Placeholder",
         //productImg: ,
-        productCategory: "cat toy",
+        productCategory: "cat toys",
         productId: 14,
-        productDesc: "Short Description of Cat Toy",
+        productDesc: "Short Description of cat toys",
         price: 14.99
       },
       {
-        productName: "Cat Toy Placeholder",
+        productName: "cat toys Placeholder",
         //productImg: ,
-        productCategory: "cat toy",
+        productCategory: "cat toys",
         productId: 15,
-        productDesc: "Short Description of Cat Toy",
+        productDesc: "Short Description of cat toys",
         price: 14.99
       },
       {
-        productName: "Cat Toy Placeholder",
+        productName: "cat toys Placeholder",
         //productImg: ,
-        productCategory: "cat toy",
+        productCategory: "cat toys",
         productId: 16,
-        productDesc: "Short Description of Cat Toy",
+        productDesc: "Short Description of cat toys",
         price: 14.99
       }
     ]
