@@ -7,7 +7,7 @@ export class ProductService {
     public productList = [
       {
         productName: "Bombay Cat",
-        //productImg: ,
+        productImg: "https://cats.com/wp-content/uploads/2020/10/Bombay-Cat.png",
         productCategory: "cats",
         productId: 1,
         productDesc: "Short Description of Cat",

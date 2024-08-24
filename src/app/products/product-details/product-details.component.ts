@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule} from '@angular/router';
 import { ProductService } from '../../service/product.service';
 import { CommonModule } from '@angular/common';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 export interface Product {
   productName: string;
@@ -14,7 +16,7 @@ export interface Product {
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, MatCardModule, MatButtonModule],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css'
 })

@@ -74,9 +74,9 @@ ul li:hover ul.dropdown{
     margin-left: auto;
 }
 
-#search form {
-    display:flex;
-    align-items: center;
+mat-form-field {
+    margin-top: 5px;
+    padding-top: 10px;
 }
 
 #search input[type="text"] {

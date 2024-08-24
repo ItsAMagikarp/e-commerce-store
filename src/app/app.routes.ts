@@ -3,10 +3,6 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
-import { CatsComponent } from './products/cats/cats.component';
-import { FoodComponent } from './products/food/food.component';
-import { AccessoriesComponent } from './products/accessories/accessories.component';
-import { CatToysComponent } from './products/cat-toys/cat-toys.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { CategoriesComponent } from './categories/categories.component';
 

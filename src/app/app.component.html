@@ -16,8 +16,12 @@
             <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
             <li id="search">
                 <form>
-                    <input class="search" type ="text" placeholder="Search.." name="search" [(ngModel)]="searchQuery"/>
-                    <button class="primary" type="submit">Search</button>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Search Here</mat-label>
+                        <input matInput placeholder="Search">
+                      </mat-form-field>
+                    <!-- <input class="search" type ="text" placeholder="Search.." name="search" [(ngModel)]="searchQuery"/> -->
+                    <button mat-raised-button class="primary" type="submit">Search</button>
                 </form>
             </li>
         </ul> 

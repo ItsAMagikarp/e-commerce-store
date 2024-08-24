@@ -23,11 +23,12 @@ header h1 {
     color: #333;
 }
 
-.product-categories h2{
+.product-categories h1{
     text-align: center;
     margin: 20px;
-    font-size: 26px;
+    font-size: 36px;
     text-transform: uppercase;
+    
 }
 
 .product-grid {

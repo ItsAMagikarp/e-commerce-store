@@ -1,10 +1,11 @@
 <div class="product-categories">
-    <h2>{{categoryName}}</h2>
+    <h1>{{categoryName}}</h1>
 </div>
 
 <main class="product-grid">
     <div *ngFor="let p of productList" (click)="navigateToProduct(p)">
         <div class="product-card">
+            <img [src]="p.productImg" alt="productImg">
             <h2>{{p.productName}}</h2>
             <p>${{p.price}}</p>
             <button>Add to Cart</button>

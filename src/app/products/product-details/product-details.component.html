@@ -1,7 +1,13 @@
-<div *ngIf="productDetails">
-    <h1>{{ productDetails.productName }}</h1>
-    <p>Category: {{ productDetails.productCategory }}</p>
+<mat-card *ngIf="productDetails">
+  <mat-card-header>
+    <mat-card-title>{{ productDetails.productName }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="productDetails.productImg" class="productImg">
+  <mat-card-content>
     <p>Description: {{ productDetails.productDesc }}</p>
     <p>Price: ${{ productDetails.price }}</p>
-    <button>Add to Cart</button>
-  </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Add to Cart </button>
+  </mat-card-actions>
+</mat-card>

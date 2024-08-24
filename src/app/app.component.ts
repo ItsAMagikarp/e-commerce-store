@@ -3,12 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { MatFormField, MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, FormsModule],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, FormsModule, MatInputModule, MatFormField, MatButtonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
