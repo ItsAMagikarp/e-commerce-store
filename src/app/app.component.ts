@@ -5,12 +5,13 @@ import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/rou
 import { FormsModule } from '@angular/forms';
 import { MatFormField, MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, FormsModule, MatInputModule, MatFormField, MatButtonModule],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive, FormsModule, MatInputModule, MatFormField, MatButtonModule, MatMenuModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

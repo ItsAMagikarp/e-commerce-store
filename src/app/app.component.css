@@ -8,6 +8,7 @@
     justify-content: flex-end;
     align-items: center;
 }
+
 #nav ul {
 list-style:none;
     padding: 0;
@@ -43,10 +44,10 @@ header {
 
 ul li ul.dropdown {
     display: none;
-    flex-direction: column; /* This makes the flex items (li elements) stack vertically */
-    padding: 0; /* Remove padding to avoid any extra spacing */
-    margin: 0;  /* Remove margin to avoid any extra spacing */
-    list-style: none; /* Remove bullet points */
+    flex-direction: column; 
+    padding: 0; 
+    margin: 0; 
+    list-style: none; 
     width: 100%;
     z-index: 999;
     position: absolute;
@@ -56,15 +57,6 @@ ul li ul.dropdown li{
     display: block;
 }
 
-ul li a:hover {
-    color: #673ab7;
-}
-
-ul li:hover ul.dropdown{
-    display:block;
-    background-color:#ffd1df;
-    z-index: 1000;
-}
 
 #link li{
     margin-right: 20px;
