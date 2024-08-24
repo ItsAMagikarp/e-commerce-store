@@ -15,7 +15,7 @@ export class ProductService {
       },
       {
         productName: "Japanese Bobtail Cat",
-        //productImg: ,
+        productImg: "https://www.petfinder.com/sites/default/files/images/content/japanese-bobtail-card-large.jpg",
         productCategory: "cats",
         productId: 2,
         productDesc: "Short Description of Cat",
@@ -23,7 +23,7 @@ export class ProductService {
       },
       {
         productName: "Toyger Cat",
-        //productImg: ,
+        productImg: "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-06/Toyger.jpg?itok=oMbZRHSr",
         productCategory: "cats",
         productId: 3,
         productDesc: "Short Description of Cat",
