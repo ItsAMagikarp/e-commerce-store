@@ -28,7 +28,6 @@ export class AppComponent implements OnInit{
   }
 
   public navigateToCategory(category: any) {
-    this.router.navigate(["products"]);
     this.router.navigate(["products", category.toLowerCase()]);
   }
 }
