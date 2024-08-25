@@ -1,3 +1,13 @@
+.header h1 {
+  text-align: left;
+  font-size: 36px;
+  margin-left: 32px;
+}
+
+.header p {
+  margin-left: 32px;
+}
+
 form {
     margin: 35px;
 }
@@ -13,7 +23,6 @@ form {
   mat-card {
     width: 100%;
     max-width: 600px;
-    padding: 30px;
   }
   
   .full-width {
@@ -24,7 +33,6 @@ form {
     width: 48%;
     margin-right: 4%;
   }
-
 
   .button-container {
     display: flex;
