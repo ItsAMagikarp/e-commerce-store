@@ -1,1 +1,17 @@
-<p>contact works!</p>
+<form >
+    <mat-form-field appearance="fill" class="half-width">
+        <mat-label>Your Name</mat-label>
+        <input matInput placeholder="Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="half-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="Email">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Message</mat-label>
+        <textarea matInput formControlName="message" rows="6"> </textarea>
+    </mat-form-field>
+    <button mat-raised-button class="primary" type="submit">Send Message</button>
+</form>

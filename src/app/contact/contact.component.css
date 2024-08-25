@@ -1,0 +1,33 @@
+form {
+    margin: 35px;
+}
+
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f4f4f4;
+  }
+  
+  mat-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+
+  .half-width {
+    width: 48%;
+    margin-right: 4%;
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
