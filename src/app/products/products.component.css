@@ -53,11 +53,11 @@ header h1 {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
-    width: 250px; /* Fixed width */
-    height: 350px; /* Fixed height */
+    width: 250px; 
+    height: 350px; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: end ;
 }
 
 .product-card:hover {
@@ -100,9 +100,6 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #e5533d;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {

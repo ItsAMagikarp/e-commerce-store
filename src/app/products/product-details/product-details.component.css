@@ -1,55 +1,58 @@
+/* Mat-card with reduced height */
 mat-card {
     display: flex;
-    align-items: flex-start;
-    padding: 20px;
-    max-width: 800px;
-    height: 500px;
-    margin: 100px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
     flex-direction: row;
-    position: relative; /* Allows positioning of the button */
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: 700px; 
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
 }
+
 
 mat-card-header {
-    display: none; /* Hide the header if not needed in this layout */
+    display: none;
 }
+
 
 .productImg {
-    width: 350px; /* Increase the width of the image */
-    height: 200px;
+    width: 40%; 
+    height: auto; 
+    max-height: 600px;
     border-radius: 8px;
-    margin-right: 20px;
-    object-fit: fill ;
+    object-fit: cover;
+    align-self: center; 
 }
+
 
 mat-card-content {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-bottom: 30px;
+    justify-content: center;
+    width: 55%; 
+    padding-left: 20px;
 }
 
-mat-card-title {
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 16px;
-    color: #555;
+mat-card-content h2 {
+    font-size: 28px;
     margin-bottom: 10px;
 }
 
+mat-card-content p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+
 mat-card-actions {
-    position: absolute; /* Position the button at the bottom */
-    bottom: 20px; /* Offset from the bottom */
-    left: 20px; /* Align with the left padding of the card */
-    width: calc(100% - 40px); /* Ensure the button doesn't overflow */
+    margin-top: 20px;
     display: flex;
-    justify-content: flex-end; /* Align button to the right */
+    justify-content: flex-start;
 }
 
 button {
@@ -57,12 +60,37 @@ button {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px;
+    margin: 30px 20px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #e5533d;
+    background-color: #e91e63;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    mat-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .productImg {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    mat-card-content {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    mat-card-actions {
+        justify-content: center;
+        margin-top: 20px;
+    }
 }
